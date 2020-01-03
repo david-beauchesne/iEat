@@ -1,0 +1,20 @@
+Package: iEat
+Title: Functions to apply a machine learning algorithm to predict species trophic interactions
+Version: 0.0.0.9000
+Authors@R: person("David", "Beauchesne", email = "david.beauchesne@hotmail.com", role = c("aut", "cre"))
+    person(given = "David",
+           family = "Beauchesne",
+           role = c("aut", "cre"),
+           email = "david.beauchesne@hotmail.com",
+           comment = c(ORCID = "0000-0002-3590-8161"))
+Description:This package provides functions to run the machine leargning algorithm presented in Beauchesne *el al.* 2016 (Life and Enrironment, 66(3-4): 333-342).
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+Depends:
+    methods,
+    R (>= 3.3.0),
+    sf
+Imports:
+    sf,
+    magrittr
