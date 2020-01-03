@@ -1,4 +1,4 @@
-#' @name iEat_bin
+#' @name iEat
 #'
 #' @title Instance-based machine learning method to predict biotic interactions
 #'
@@ -40,6 +40,8 @@
 #'
 #' @export
 
+# /TODO: Tanimoto: NAs or ""?
+
 iEat <- function(S0, S1, S2 = S1, sourceSim, targetSim = sourceSim, K = 5, minSim = 0.3, minWt = 1, predict = 'full algorithm') {
 
     #Checkups for data structure
@@ -53,6 +55,7 @@ iEat <- function(S0, S1, S2 = S1, sourceSim, targetSim = sourceSim, K = 5, minSi
         stop('Taxa in S2 have to be included in S1')
     if (!is.numeric(sourceSim) | !is.numeric(targetSim))
         stop('Similarity matrices have to be numerical')
+
 
     # Empty matrix created to store algorithm predictions
     predictions <- data.frame(source = S1,

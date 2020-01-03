@@ -1,6 +1,6 @@
 ## Description
 
-This package provides functions to run the machine leargning algorithm presented in Beauchesne *el al.* 2016 (Life and Enrironment, 66(3-4): 333-342).
+This package provides functions to run the machine learning algorithm presented in Beauchesne *el al.* 2016 (Life and Environment, 66(3-4): 333-342).
 
 ## Installation
 

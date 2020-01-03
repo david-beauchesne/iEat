@@ -1,7 +1,7 @@
 KNN <- function(taxa, matSim, K, minSim) {
     # K nearest neighbour (KNN) majority vote selection to identify most similar taxa
     similar <- matSim[taxa, ] %>%
-                .[!names(.) %in% i] %>% # removing i from most similar targetSim
+                .[!names(.) %in% taxa] %>% # removing i from most similar targetSim
                 .[order(., decreasing = TRUE)] %>%
                 {
                     if(.[K+1] == .[K]) # if K + 1 == K, randomly sample a most similar taxa and pick K most similar taxa
