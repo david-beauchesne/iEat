@@ -8,6 +8,6 @@ KNN <- function(taxa, matSim, K, minSim) {
                         c(.[which(. > .[K])], .[sample(which(. == .[K]))])[1:K]
                         else .[1:K]
                 } %>%
-                .[!. == 0 & . < minSim] # remove all similarities == 0 and similarities below minSim
+                .[!. == 0 & . > minSim] # remove all similarities == 0 and similarities below minSim
     return(similar)
 }
