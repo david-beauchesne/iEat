@@ -38,7 +38,7 @@
 #' # Predictions on simulated data
 #' iEat_bin(S0, S1, S2, sourceSim)
 #'
-#' @rdname iEat_bin
+#' @rdname iEat
 #'
 #' @export
 
