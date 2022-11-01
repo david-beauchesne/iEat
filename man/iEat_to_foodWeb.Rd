@@ -7,10 +7,7 @@
 iEat_to_foodWeb(iEatResult)
 }
 \arguments{
-\item{Matrix, }{catalogue of empirical data used to infer predictions}
-}
-\value{
-A dataframe with source taxa for which target predictions are made, target infered from catalogue data (empirical) and target infered from KNN algorithm
+\item{iEatResult}{output from iEat function}
 }
 \description{
 transform iEat prediction result to matrix format
